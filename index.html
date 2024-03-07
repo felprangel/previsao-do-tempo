@@ -7,10 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="javascript:;" onsubmit="buscaCidade()">
-        <input id="cidade" type="text" placeholder="Procure por cidade">
-        <button type="submit"></button>
-    </form>
+    <div id="content">
+        <header>
+            <form action="javascript:;" onsubmit="buscaCidade()">
+                <input id="cidade" type="text" placeholder="Procure por cidade">
+                <button type="submit"></button>
+            </form>
+        </header>
+
+        <div>
+
+            <div>
+                <p id="previsao"></p>
+                <br>
+                <p id="nome_cidade"></p>
+            </div>
+
+            <div id="container">
+
+                <div>
+                    <p id="temperatura"></p><sup>°C</sup>
+                </div>
+
+                <div id="detalhes">
+                    <ul>
+                        <li id="sensacao"></li>
+                        <li id="umidadde"></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

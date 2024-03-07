@@ -11,14 +11,28 @@ async function buscaDados(cidade = 'Nova Serrana') {
         ehDia: dados.current.is_day
     }
 
-    return previsao
+    manipulaDom(previsao)
 }
 
-async function buscaCidade() {
+function buscaCidade() {
     const cidade = document.querySelector('#cidade')
-    const previsao = await buscaDados(cidade.value)
+    buscaDados(cidade.value)
     cidade.value = ''
-    console.log(previsao)
 }
 
-buscaDados().then(dados => console.log(dados))
+async function manipulaDom(dados) {
+    const previsao = document.querySelector('#previsao')
+    const cidade = document.querySelector('#nome_cidade')
+    const temperatura = document.querySelector('#temperatura')
+    const sensacao = document.querySelector('#sensacao')
+    const umidade = document.querySelector('#umidade')
+
+    previsao.innerText = dados.clima
+    cidade.innerText = dados.cidade
+    temperatura.innerText = dados.temperatura
+    sensacao.innerText = dados.sensacao
+    umidade.innerText = dados.umidade
+
+}
+
+buscaDados()
