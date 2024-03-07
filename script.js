@@ -29,9 +29,9 @@ async function manipulaDom(dados) {
 
     previsao.innerText = dados.clima
     cidade.innerText = dados.cidade
-    temperatura.innerText = dados.temperatura
-    sensacao.innerText = dados.sensacao
-    umidade.innerText = dados.umidade
+    temperatura.innerText = `${dados.temperatura} °C`
+    sensacao.innerText = `Sensação Térmica: ${dados.sensacao} °C`
+    umidade.innerText = `Umidade: ${dados.umidade}%`
 
 }
 
