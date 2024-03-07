@@ -14,4 +14,11 @@ async function buscaDados(cidade = 'Nova Serrana') {
     return previsao
 }
 
-buscaDados('São Paulo')
+async function buscaCidade() {
+    const cidade = document.querySelector('#cidade')
+    const previsao = await buscaDados(cidade.value)
+    cidade.value = ''
+    console.log(previsao)
+}
+
+buscaDados().then(dados => console.log(dados))
