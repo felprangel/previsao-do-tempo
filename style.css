@@ -41,3 +41,20 @@ ul {
     display: flex;
     align-items: center;
 }
+
+#temperatura {
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+#container-previsao {
+    padding-left: 7rem;
+}
+
+#detalhes {
+    font-weight: 500;
+}
+
+#sensacao {
+    padding-bottom: 1rem;
+}
