@@ -2,27 +2,44 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    background-image: url(./night.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fdfdfd;
 }
 
 ul {
     list-style: none;
 }
 
-.night {
-    background-color: #1a1a1a;
-    color: #fff;
+header {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.day {
-    background-color: #fff;
-    color: #000;
+input {
+    margin: 1rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgb(255 255 255 / 20%);
+}
+
+::placeholder {
+    color: #fdfdfd;
+}
+
+button {
+    visibility: hidden
 }
 
 #container-previsao {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    height: 90vh;
+    height: 85vh;
     flex-direction: column;
 }
 
