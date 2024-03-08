@@ -22,7 +22,7 @@ function buscaCidade() {
 
 async function manipulaDom(dados) {
     const previsao = document.querySelector('#previsao')
-    const cidade = document.querySelector('#nome_cidade')
+    const cidade = document.querySelector('#nome-cidade')
     const temperatura = document.querySelector('#temperatura')
     const sensacao = document.querySelector('#sensacao')
     const umidade = document.querySelector('#umidade')
