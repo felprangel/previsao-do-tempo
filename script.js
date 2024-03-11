@@ -1,5 +1,5 @@
 async function buscaDados(cidade = 'Nova Serrana') {
-    const resposta = await fetch(`http://api.weatherapi.com/v1/current.json?key=3b546359c6934f8c921231553240503&q=${cidade}&aqi=no`)
+    const resposta = await fetch(`https://api.weatherapi.com/v1/current.json?key=3b546359c6934f8c921231553240503&q=${cidade}&aqi=no`)
     const dados = await resposta.json()
 
     const previsao = {
